@@ -1,2 +1,62 @@
 @import url(reset.css);
 @import url(common.css);
+
+header{
+    padding: 10px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu_wrap{
+    display: flex;
+    gap: 40px;
+}
+
+.menu a{
+    font-size: 16px;
+    letter-spacing: -0.05em;
+}
+
+.line_h{
+    width: 100%;
+    height: 2px;
+    background-color: #1d1d1d5d;
+    border-radius: 20px;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.menu:hover .line_h{
+    transform: scale(1);
+}
+
+.side_menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.login{
+   opacity: 0.5;
+   transition: 0.5s;
+}
+
+.search{
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.lang{
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.login:hover,
+.search:hover,
+.lang:hover{
+    opacity: 1;
+}
