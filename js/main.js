@@ -1,9 +1,12 @@
 $(document).ready(function(){
 
     var swiper = new Swiper(".sec_1_swiper", {
-      pagination: {
-        el: ".swiper-pagination",
-      },
+        loop: true,
+        // autoplay: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
     });
 
 }); //end

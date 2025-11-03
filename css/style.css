@@ -7,6 +7,7 @@ header{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    z-index: 50;
 }
 
 .menu_wrap{
@@ -60,3 +61,117 @@ header{
 .lang:hover{
     opacity: 1;
 }
+
+/* header_end */
+
+.sec_1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec_1 .swiper .swiper-pagination-bullet {
+    width: 20px;
+    height: 10px;
+    border-radius: 30px;
+    background: #dcdcdc;
+}
+
+.sec_1 .swiper .swiper-pagination-bullet-active {
+    background: #ffffff;
+}
+
+.sec_1 .swiper .swiper-pagination-bullets {
+    margin-bottom: 100px;
+}
+
+.wikino{
+    position: absolute;
+    top: 20%;
+    left: 200px;
+    z-index: 50;
+}
+
+.seoul{
+    position: absolute;
+    bottom: 30%;
+    right: 200px;
+    z-index: 50;
+}
+
+/* sec_1 end */
+
+.sec_2{
+    margin-top: 100vh;
+}
+
+.title_wrap_2{
+    text-align: center;
+}
+
+.con_wrap_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.con_2{
+    width: 33%;
+    position: relative;
+}
+
+.hover_con_2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(29, 29, 29, 0.15);
+    backdrop-filter: blur(4px);
+    border-radius: 30px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+    transition-timing-function:ease-in-out;
+}
+
+.hover_text_2{
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: 0.5s;
+}
+
+.hover_con_2:hover{
+    opacity: 1;
+}
+
+.hover_con_2:hover .hover_text_2{
+    transform: translate(-50%, -50%) scale(1);
+}
+

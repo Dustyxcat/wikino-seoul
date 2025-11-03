@@ -1,5 +1,6 @@
 section:not(.sec_1, .sec_4){
     padding: 200px 200px;
+    height: 100vh;
 }
 
 h2{
