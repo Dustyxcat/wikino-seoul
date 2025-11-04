@@ -1,4 +1,4 @@
-section:not(.sec_1, .sec_4, .banner){
+section:not(.sec_1, .banner){
     padding: 200px 200px;
     height: 100vh;
 }
