@@ -320,3 +320,50 @@ header{
 }
 /* sec_4 end */
 
+.title_wrap_5{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.con_wrap_5{
+    display: flex;
+    gap: 30px;
+}
+
+.con_5{
+    position: relative;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.hover_con_5{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(29, 29, 29, 0.15);
+    backdrop-filter: blur(4px);
+    transition-timing-function:ease-in-out;
+    border-radius: 30px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.hover_con_5 h4{
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: 0.5s;
+}
+
+.hover_con_5:hover{
+    opacity: 1;
+}
+.hover_con_5:hover h4{
+    transform: translate(-50%, -50%) scale(1);
+}
+/* sec_5 end */
