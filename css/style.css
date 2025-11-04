@@ -291,7 +291,7 @@ header{
     color: #1d1d1d;
 }
 
-.btn_4 a{
+.btn a{
     margin-top: 70px;
     display: flex;
     align-items: center;
@@ -299,7 +299,7 @@ header{
     gap: 20px;
 }
 
-.arrow_4{
+.arrow{
     margin-top: 3px;
     width: 33px;
     height: 33px;
@@ -309,13 +309,13 @@ header{
     padding-left: 2px;
 }
 
-.btn_4 h6{
+.btn h6{
     opacity: 0.7;
     transition: 0.5s;
     font-size: 22px;
 }
 
-.btn_4:hover h6{
+.btn:hover h6{
     opacity: 1;
 }
 /* sec_4 end */
@@ -367,3 +367,69 @@ header{
     transform: translate(-50%, -50%) scale(1);
 }
 /* sec_5 end */
+
+.sec_6{
+    position: relative;
+}
+
+.title_wrap_6 {
+    text-align: center;
+}
+
+.title_wrap_6 h2{
+    font-size: 380px;
+    line-height: 350px;
+    letter-spacing: -0.08em;
+}
+
+.con_wrap_6{
+    display: flex;
+}
+
+.con_6{
+    width: 300px;
+}
+
+.left_6{
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    z-index: 30;
+    box-shadow: 10px 15px 20px 5px rgba(0, 0, 0, 0.1);
+    transform: rotate(-15.22deg);
+    transition: 0.5s;
+}
+
+.right_6{
+    position: absolute;
+    top: 58%;
+    right: 36%;
+    box-shadow: 10px 15px 20px 5px rgba(0, 0, 0, 0.1);
+    transform: rotate(13.33deg);
+    transition: 0.5s;
+}
+
+.left_6:hover{
+    left: 40%;
+    transform: rotate(0deg);
+}
+.right_6:hover{
+    right: 40%;
+    z-index: 40;
+    transform: rotate(0deg);
+}
+
+.sec_6 .arrow{
+    margin-top: 3px;
+    width: 33px;
+    height: 33px;
+    background-color: #1d1d1d;
+    border-radius: 50%;
+    padding-top: 4px;
+    padding-left: 14px;
+}
+
+.sec_6 .btn{
+    margin-top: 120px;
+}
+/* sec_6 end */
