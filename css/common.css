@@ -3,11 +3,29 @@ section:not(.sec_1, .banner){
     height: 100vh;
 }
 
+@media screen and (max-width: 1420px){
+    section:not(.sec_1, .banner){
+        padding: 100px 100px;
+        height: 80vh;
+    }
+
+}
+
 h2{
     font-weight: 900;
     font-size: 220px;
     line-height: 264px;
     letter-spacing: -0.1em;
+}
+
+@media screen and (max-width: 1420px){
+    h2{
+        font-weight: 900;
+        font-size: 180px;
+        line-height: 264px;
+        letter-spacing: -0.1em;
+    }
+
 }
 
 h3{
@@ -16,10 +34,22 @@ h3{
     letter-spacing: -0.05em;
 }
 
+@media screen and (max-width: 1420px){
+    h3{
+        font-size: 48px;
+    }
+}
+
 h4{
     font-weight: 700;
     font-size: 36px;
     letter-spacing: -0.05em;
+}
+
+@media screen and (max-width: 1420px){
+    h4{
+        font-size: 28px;
+    }
 }
 
 h5{
@@ -28,9 +58,16 @@ h5{
     letter-spacing: -0.05em;
 }
 
+@media screen and (max-width: 1420px){
+    h5{
+        font-size: 18px;
+    }
+}
+
 h6{
     font-weight: 400;
     font-size: 16px;
     letter-spacing: -0.05em;
 }
+
 

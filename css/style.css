@@ -16,15 +16,16 @@ header{
 }
 
 .menu a{
+    width: 100%;
     font-size: 16px;
     letter-spacing: -0.05em;
 }
 
 .line_h{
     width: 100%;
-    height: 2px;
-    background-color: #1d1d1d5d;
-    border-radius: 20px;
+    height: 3px;
+    z-index: 10;
+    background-color: #ff4400c4;
     transform: scale(0);
     transition: 0.5s;
 }
@@ -60,6 +61,17 @@ header{
 .search:hover,
 .lang:hover{
     opacity: 1;
+}
+
+@media screen and (max-width: 1420px) {
+    header{
+        padding: 10px 100px;
+    }
+
+    .menu_wrap{
+        display: flex;
+        gap: 30px;
+    }
 }
 
 /* header_end */
@@ -119,6 +131,17 @@ header{
     z-index: 50;
 }
 
+@media screen and (max-width: 1420px){
+    .wikino{
+        top: 18%;
+        left: 100px;
+    }
+
+    .seoul{
+        bottom: 35%;
+        right: 100px;
+    }
+}
 /* sec_1 end */
 
 .sec_2{
@@ -148,7 +171,7 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(29, 29, 29, 0.15);
+    background: #ff4400c4;;
     backdrop-filter: blur(4px);
     border-radius: 30px;
     text-align: center;
@@ -167,12 +190,22 @@ header{
     transition: 0.5s;
 }
 
+.hover_text_2 h4{
+    font-size: 40px;
+}
+
 .hover_con_2:hover{
     opacity: 1;
 }
 
 .hover_con_2:hover .hover_text_2{
     transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width: 1420px){
+    .hover_text_2 h4{
+        font-size: 32px;
+    }
 }
 
 /* sec_2 end */
@@ -209,6 +242,13 @@ header{
     }
 }
 
+@media screen and (max-width: 1420px){
+    .banner {
+        margin-top: 0px;
+    }
+
+}
+
 /* banner end */
 
 .con_wrap_3{
@@ -222,10 +262,12 @@ header{
     text-align: center;
     border-radius: 30px;
     border: 1px solid #ededed;
+    overflow: hidden;
 }
 
 .text_con_3{
     border: 0px;
+    overflow: unset;
 }
 
 .text_con_3 h3{
@@ -243,7 +285,7 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(29, 29, 29, 0.15);
+    background: #ff4400c4;
     backdrop-filter: blur(4px);
     transition-timing-function:ease-in-out;
     border-radius: 30px;
@@ -252,6 +294,7 @@ header{
 }
 
 .hover_con_3 h4{
+    font-size: 40px;
     color: #ffffff;
     width: 100%;
     position: absolute;
@@ -266,6 +309,12 @@ header{
 }
 .hover_con_3:hover h4{
     transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width: 1420px){
+    .hover_con_3 h4{
+        font-size: 32px;
+    }
 }
 
 /* sec_3 end */
@@ -307,6 +356,7 @@ header{
     border-radius: 50%;
     padding-top: 3px;
     padding-left: 2px;
+    transition: 0.5s;
 }
 
 .btn h6{
@@ -318,6 +368,19 @@ header{
 .btn:hover h6{
     opacity: 1;
 }
+
+.btn:hover .arrow{
+    background-color: #ff4600;
+}
+
+@media screen and (max-width: 1420px){
+    .sec_4{
+        margin-top: 50px;
+        background: url(../img/sec_4/accessories.png) no-repeat center / cover;
+    }
+
+    
+}
 /* sec_4 end */
 
 .title_wrap_5{
@@ -327,10 +390,11 @@ header{
 
 .con_wrap_5{
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
 }
 
 .con_5{
+    width: 32%;
     position: relative;
     text-align: center;
     border-radius: 30px;
@@ -342,7 +406,7 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(29, 29, 29, 0.15);
+    background: #ff4400c4;
     backdrop-filter: blur(4px);
     transition-timing-function:ease-in-out;
     border-radius: 30px;
@@ -434,12 +498,60 @@ header{
     margin-top: 120px;
 }
 /* sec_6 end */
+@media screen and (max-width: 1670px) {
+    .title_wrap_6 h2{
+        font-size: 300px;
+        line-height: 280px;
+    }
+
+    .left_6{
+        width: 250px;
+        position: absolute;
+        top: 47%;
+        left: 38%;
+    }
+
+
+    .right_6{
+        width: 250px;
+        position: absolute;
+        top: 52%;
+        right: 38%;
+    }
+}
+
+@media screen and (max-width: 1420px){
+    .title_wrap_6 h2{
+        font-size: 250px;
+        line-height: 200px;
+    }
+
+    .left_6{
+        width: 200px;
+        top: 33%;
+        left: 38%;
+    }
+
+
+    .right_6{
+        width: 200px;
+        top: 36%;
+        right: 38%;
+    }
+}
 
 footer{
     position: relative;
     margin-top: 300px;
     padding: 100px 200px;
     background-color: #1d1d1d;
+}
+
+@media screen and (max-width: 1420px){
+    footer{
+        margin-top: 100px;
+        padding: 100px 100px;
+    }
 }
 
 .top_f{
