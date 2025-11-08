@@ -1,12 +1,12 @@
-section:not(.sec_1, .banner){
+section:not(.sec_1, .banner, .sec_3){
     padding: 200px 200px;
     height: 100vh;
 }
 
-@media screen and (max-width: 1420px){
-    section:not(.sec_1, .banner){
-        padding: 100px 100px;
-        height: 80vh;
+@media screen and (max-width: 1450px){
+    section:not(.sec_1, .banner, .sec_3){
+        padding: 50px 20px;
+        height: auto;
     }
 
 }
@@ -18,12 +18,10 @@ h2{
     letter-spacing: -0.1em;
 }
 
-@media screen and (max-width: 1420px){
+@media screen and (max-width: 1450px){
     h2{
         font-weight: 900;
-        font-size: 180px;
-        line-height: 264px;
-        letter-spacing: -0.1em;
+        font-size: 90px;
     }
 
 }
@@ -34,9 +32,9 @@ h3{
     letter-spacing: -0.05em;
 }
 
-@media screen and (max-width: 1420px){
+@media screen and (max-width: 1450px){
     h3{
-        font-size: 48px;
+        font-size: 30px;
     }
 }
 
@@ -70,4 +68,23 @@ h6{
     letter-spacing: -0.05em;
 }
 
+/* /font set end */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
