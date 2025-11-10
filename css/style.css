@@ -82,13 +82,17 @@
     .cate_r{
         margin-bottom: 50px;
     }
-
+    
     .cate_r li{
         font-size: 18px;
         line-height: 50px;
     }
 
-    .cate_r .point_cate a{
+    .cate_r a{
+        transition: 0.3s;
+    }
+    
+    .cate_r li:hover a{
         color: #ff4600;
     }
 
@@ -289,6 +293,27 @@
         margin-bottom: 100px;
     }
 
+    .cate_r li{
+        font-size: 18px;
+        line-height: 50px;
+    }
+
+    .cate_r a{
+        transition: 0s;
+    }
+
+    .point_cate a{
+        color: #ff4600;
+    }
+    
+    .cate_r li:hover a{
+        color: #000000;
+    }
+
+    .cate_r:hover .point_cate a{
+        color: #ff4600;
+    }
+
     .right_link{
         width: 200px;
         margin: 0 auto;
@@ -317,11 +342,11 @@
     width: 20px;
     height: 10px;
     border-radius: 30px;
-    background: #dcdcdc;
+    background: #000000;
 }
 
 .pc_sec_1 .swiper .swiper-pagination-bullet-active {
-    background: #ffffff;
+    background: #ff4600;
 }
 
 .pc_sec_1 .swiper .swiper-pagination-bullets {
@@ -400,8 +425,8 @@
     }
 
     .title_wrap_1 h2{
-        font-size: 90px;
-        letter-spacing: -10px;
+        font-size: 88px;
+        letter-spacing: -6.5px;
     }
 
     .wekino{
@@ -421,16 +446,32 @@
 
 @media screen and (max-width: 398px){
     .title_wrap_1 h2{
-        font-size: 78px;
-        line-height: 250px;
-        letter-spacing: -10px;
+        font-size: 76px;
+        line-height: 88px;
+        letter-spacing: -6px;
+    }
+
+     .wekino{
+        top: 34%;
+    }
+
+    .seoul{
+        bottom: 41%;
     }
 }
 @media screen and (max-width: 380px){
     .title_wrap_1 h2{
-        font-size: 76px;
-        line-height: 250px;
-        letter-spacing: -10px;
+        font-size: 74px;
+        line-height: 88px;
+        letter-spacing: -6px;
+    }
+
+     .wekino{
+        top: 33%;
+    }
+
+    .seoul{
+        bottom: 40%;
     }
 }
 
@@ -563,7 +604,7 @@
 }
 
 .banner_wrap img {
-    width: 200px;
+    width: 250px;
 }
 
 @keyframes banner {
@@ -594,7 +635,7 @@
 /* banner end */
 
 .sec_3{
-   padding: 100px 20px;
+   padding: 100px 200px;
 }
 
 .con_wrap_3{
@@ -697,9 +738,9 @@
     
     .mob_title_3 h5{
         text-align: center;
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
-        color: #d6cdcd;
+        color: #000000;
         
     }
     
@@ -827,12 +868,12 @@
     
     .arrow{
         margin-top: 3px;
-        width: 33px;
-        height: 33px;
+        width: 26px;
+        height: 26px;
         background-color: #ff4600;
         border-radius: 50%;
-        padding-top: 3px;
-        padding-left: 2px;
+        padding-top: 0px;
+        padding-left: 4px;
         transition: 0.5s;
     }
     
@@ -840,7 +881,7 @@
         opacity: 1;
         margin-top: 2px;
         transition: 0.5s;
-        font-size: 22px;
+        font-size: 18px;
     }
     
     .btn:hover h6{
@@ -1113,12 +1154,12 @@
     
     .mob_sec_6 .arrow{
         margin-top: 3px;
-        width: 33px;
-        height: 33px;
+        width: 26px;
+        height: 26px;
         background-color: #ff4600;
         border-radius: 50%;
-        padding-top: 4px;
-        padding-left: 14px;
+        padding-top: 0px;
+        padding-left: 10px;
     }    
 
     .mob_sec_6 .btn{
@@ -1133,7 +1174,7 @@
     }    
 
     .mob_sec_6 .btn h6{
-        font-size: 22px;
+        font-size: 18px;
     }
 }    
 /* sec_6 end */
